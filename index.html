@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="en"><head>
+		<meta charset="utf-8">
+
+		<link rel="icon" href="../../slowroads.io/favicon.svg">
+		<!-- <link rel="icon" href="/favicon_dark.svg" type="image/x-icon" media="(prefers-color-scheme: dark)"> -->
+		<!-- <link rel="icon" href="/favicon_light.svg" type="image/x-icon" media="(prefers-color-scheme: light)"> -->
+		<link rel="preload" href="/fonts/Sono.ttf" as="font" type="font/ttf" crossorigin="">
+		<link rel="preload" href="/fonts/Space.ttf" as="font" type="font/ttf" crossorigin="">
+
+		<link rel="manifest" href="/manifest.json">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="title" content="Slow Roads">
+		<meta name="description" content="Endless driving zen">
+		<meta name="color-scheme" content="light only">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://slowroads.io/">
+		<meta property="og:title" content="Slow Roads">
+		<meta property="og:description" content="Endless driving zen">
+		<meta property="og:image" content="../../slowroads.io/meta-2.0.0.jpg">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://slowroads.io/">
+		<meta property="twitter:title" content="Slow Roads">
+		<meta property="twitter:description" content="Endless driving zen">
+		<meta property="twitter:image" content="/meta-2.0.0.jpg">
+
+		<title> s l o w  r o a d s</title>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+			  if (window.location.hash) {
+				// Check if the URL contains a hash
+				const metas = document.querySelectorAll('meta[property^="og:"], meta[name^="twitter:"]');
+
+				// Remove or modify the necessary meta tags
+				metas.forEach(meta => {
+				  	meta.parentNode.removeChild(meta);
+				});
+			  }
+			});
+
+		</script>
+
+		<style>
+
+			:root {
+				--sr-white: #F4F2ED;
+
+				--sr-white-0: #F4F2ED00;
+				--sr-white-25: #F4F2ED40;
+				--sr-white-50: #F4F2ED80;
+				--sr-white-75: #F4F2EDC0;
+
+				--sr-primary: #343c3e;
+				--sr-primary-0: #343c3e00;
+				--sr-primary-25: #343c3e40;
+				--sr-primary-50: #343c3e80;
+				--sr-primary-75: #343c3eC0;
+
+				--sr-secondary: #D2D1CD;
+				--sr-secondary-0: #D2D1CD00;
+				--sr-secondary-25: #D2D1CD40;
+				--sr-secondary-50: #D2D1CD80;
+				--sr-secondary-75: #D2D1CDC0;
+
+				--sr-warn: #ff992b;
+
+				--sr-dark: #444444;
+				--sr-darker: #333;
+				--sr-black: #222222;
+
+				--sr-bg: #F4F2ED;
+				--sr-lowlight: #343c3e80;
+
+				color-scheme: light only;
+			}
+
+			@font-face {
+				font-family: Sono;
+				src: url(../../slowroads.io/fonts/Sono.ttf);
+				font-variant: slashed-zero;
+			}
+
+			@font-face {
+				font-family: Space;
+				src: url(../../slowroads.io/fonts/Space.ttf);
+				font-variant: slashed-zero;
+			}
+
+			/* width */
+			::-webkit-scrollbar {
+				width: 0.6rem;
+			}
+
+			/* Track */
+			::-webkit-scrollbar-track {
+				background: var(--sr-primary-25);
+			}
+
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+				background: var(--sr-primary-50);
+			}
+
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+				background: var(--sr-primary);
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				scroll-behavior: smooth !important;
+		    }
+
+			body {
+				overflow: hidden;
+				font-family: Space, Helvetica, sans-serif;
+			}
+
+			img {
+				-webkit-user-drag: none;
+				-khtml-user-drag: none;
+				-moz-user-drag: none;
+				-o-user-drag: none;
+				user-drag: none;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			html {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				font-size: 16px;
+			}
+
+			@media screen and (orientation: landscape) and (max-width: 1361px)  {
+				html {
+					font-size: 14px;
+				}
+			}
+
+			@media screen and (orientation: landscape) and (max-width: 1180px) {
+				html {
+					font-size: 12px;
+				}
+			}
+
+			@media screen and (orientation: portrait) {
+				html {
+					font-size: 12px;
+				}
+			}
+
+		</style>
+
+		<script src="../../slowroads.io/alea.min.js"></script>
+
+		
+		<link rel="modulepreload" href="/_app/immutable/entry/start.b0a6326b.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/scheduler.6cda8fd7.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons.96f92c21.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.85bbc95f.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.17fcad52.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.946b5041.js">
+	<link rel="modulepreload" as="script" crossorigin="" href="https://slowroads.io/_app/immutable/nodes/0.35cae92c.js"><link rel="modulepreload" as="script" crossorigin="" href="https://slowroads.io/_app/immutable/nodes/1.a345f2e3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://slowroads.io/_app/immutable/nodes/2.79613f77.js"><link rel="stylesheet" href="../../slowroads.io/_app/immutable/assets/2.c1fd901a.css"></head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><div id="splash" class="svelte-1ub18gl"><div id="splash-fixed" class="svelte-1ub18gl"><div id="splash-main" class="svelte-1ub18gl"><div id="splash-title" class="svelte-1ub18gl"><img class="splash-logo svelte-1ub18gl" src="../../slowroads.io/img/logo-stacked.svg" alt=""> <div class="splash-subtitle svelte-1ub18gl">endless driving zen</div> <div id="splash-begin" class="svelte-1ub18gl">begin</div></div> <div class="splash-smallprint splash-lr svelte-1ub18gl">v2.0.0 <br>
+                This work is licensed under a <a rel="license noopener noreferrer" class="splash-smallprint-link svelte-1ub18gl" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0 International License</a></div> <div class="splash-old svelte-1ub18gl"><span style="font-size: 1.2rem; color: var(--sr-primary)">Prefer the old version?</span> <br> <span style="font-size: 0.9rem">Find it at <a class="splash-smallprint-link svelte-1ub18gl" href="https://old.slowroads.io">old.slowroads.io</a></span></div> <div class="splash-smallprint splash-ll svelte-1ub18gl">from <a class="splash-smallprint-link svelte-1ub18gl" href="https://topograph.io" target="_blank" rel="noopener noreferrer">topograph.io</a> © 2025</div> <div class="splash-main-buttons svelte-1ub18gl"><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/TNf9bBrZmR" alt="" class="splash-main-button svelte-1ub18gl"><img src="../../slowroads.io/img/icon_discord.svg" alt="" class="splash-main-button-icon svelte-1ub18gl"> <br>
+                    Join the Discord</a> <a href="#about" class="splash-main-button svelte-1ub18gl" style="padding-top: 2rem;"><span style="font-size: 1.5rem">About</span> <br> <span style="font-size: 2rem">▾</span></a> <a target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/3431300/Slow_Roads/" alt="" class="splash-main-button splash-main-button-highlight svelte-1ub18gl"><div class="splash-main-steam-notice svelte-1ub18gl">Store page is live!</div> <img src="../../slowroads.io/img/icon_steam.svg" alt="" class="splash-main-button-icon svelte-1ub18gl"> <br>
+                    Wishlist on Steam</a></div></div> <div id="about" class="svelte-1ub18gl"><div class="splash-body-section svelte-1ub18gl" style="background: none;"><div class="splash-body-wrapper svelte-1ub18gl" style="margin: 5rem 0"><div class="splash-blurb-corner-tl svelte-1ub18gl"></div> <div class="splash-blurb-corner-tr svelte-1ub18gl"></div> <div class="splash-blurb svelte-1ub18gl"><strong>Slow Roads</strong> is a casual driving game all about finding peace in a long, scenic journey. No ads, no interruptions, and no end to the road. Set the weather to suit your mood, throw on some music, and <strong>just drive.</strong></div> <div class="splash-blurb-corner-bl svelte-1ub18gl"></div> <div class="splash-blurb-corner-br svelte-1ub18gl"></div></div></div> <div class="splash-body-section svelte-1ub18gl"><div class="splash-body-wrapper svelte-1ub18gl"><div class="splash-body-header svelte-1ub18gl">Welcome to Slow Roads 2.0</div> <div class="splash-body-text svelte-1ub18gl">When Slow Roads first released in October 2022 it was more of a tech demo more than a game, and it showed. Aside from the simple graphics, the codebase was messy, performance was poor, and adding new features was a nightmare. So, since 2023 I've been gradually re-writing the entire engine from the ground up to be more stable, better optimised, and much easier to work with. And I changed a few textures.</div> <div class="splash-body-subheader svelte-1ub18gl">New in version 2.0:</div> <div class="splash-body-bullets svelte-1ub18gl"><div class="splash-body-bullet svelte-1ub18gl">A new environment engine which loads faster, runs better, crashes less often, and is more flexible</div> <div class="splash-body-bullet svelte-1ub18gl">Overhauled graphics with new textures, shaders, and lighting effects</div> <div class="splash-body-bullet svelte-1ub18gl">Single-track roads, plus a new road width setting</div> <div class="splash-body-bullet svelte-1ub18gl">3D trees and improved foliage systems</div> <div class="splash-body-bullet svelte-1ub18gl">Mobile support</div></div> <br> <div class="splash-body-text svelte-1ub18gl">At long last, I feel that version 2.0 realises of the original vision I had for what Slow Roads could be— but these roads are endless, and this is just the beginning. There's much more that I want to do, and with the new engine I'm looking to pick up the pace. From this point on I'll be aiming for small, weekly updates, gradually building out all the new locations, vehicles, and environmental details I've been planning since day one. If you want to follow along, make sure you <a class="splash-body-link svelte-1ub18gl" href="https://discord.gg/TNf9bBrZmR" target="_blank" rel="noopener noreferrer">join the Discord</a> and <a class="splash-body-link svelte-1ub18gl" href="https://bsky.app/profile/slowroads.io" target="_blank" rel="noopener noreferrer">follow slowroads.io on Bluesky!</a></div></div></div> <div class="splash-body-section svelte-1ub18gl" style="background: linear-gradient(135deg, rgb(35, 56, 72), rgb(35, 38, 44), rgb(35, 38, 44));"><div class="splash-body-wrapper svelte-1ub18gl" style="color: var(--sr-secondary)"><div class="splash-body-header svelte-1ub18gl" style="color: #6dcff6; text-shadow: 0 0 1rem #6dcff688">Coming soon to Steam!
+                        <a class="splash-visit-steam svelte-1ub18gl" target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/3431300/Slow_Roads/"><img src="../../slowroads.io/img/icon_steam_white.svg" class="splash-body-steam-icon svelte-1ub18gl" alt="">
+                            Visit store page</a></div> <div class="splash-body-text svelte-1ub18gl">Slow Roads is fundamentally designed as a lightweight web experience, and that won't be changing, but there's a lot of potential to go beyond the limits of the browser.
+                        Over the years I've also had a lot of requests for features which would break the core design of Slow Roads as a simple, quick get-away— and which would demand more time than I can give as a hobby.
+                        That's why I'm soon to be releasing an expanded version on Steam, featuring all the things that wouldn't belong in the web.</div> <div class="splash-body-subheader svelte-1ub18gl" style="color: #6dcff6;">Targeted for the first release:</div> <div class="splash-body-bullets svelte-1ub18gl"><div class="splash-body-bullet svelte-1ub18gl">A scene editor which lets you craft your ideal road</div> <div class="splash-body-bullet svelte-1ub18gl">Vehicle customisation, including colours and engine sounds</div> <div class="splash-body-bullet svelte-1ub18gl">Expanded vehicle configuration settings for more control over the physics</div> <div class="splash-body-bullet svelte-1ub18gl">Profiles for saving progress and customisations</div> <div class="splash-body-bullet svelte-1ub18gl">Achievements</div> <div class="splash-body-bullet svelte-1ub18gl">High-resolution assets</div></div> <div class="splash-body-text svelte-1ub18gl">This first release is cautiously targeted for <strong>April 2025</strong> - the goal is to get a simple version out soon and then, like the web version, continue to iterate long into the future.</div> <div class="splash-body-subheader svelte-1ub18gl" style="color: #6dcff6;">Longer-term targets:</div> <div class="splash-body-bullets svelte-1ub18gl"><div class="splash-body-bullet svelte-1ub18gl">Extra graphics settings, including added features like post-processing effects</div> <div class="splash-body-bullet svelte-1ub18gl">Extra locations and vehicles not available in the web version</div> <div class="splash-body-bullet svelte-1ub18gl">Multiplayer game modes</div> <div class="splash-body-bullet svelte-1ub18gl">Enhanced scene editing tools for full world customisation</div></div> <div class="splash-body-text svelte-1ub18gl">If this sounds good to you, please support me by <a class="splash-body-link svelte-1ub18gl" href="https://store.steampowered.com/app/3431300/Slow_Roads/" target="_blank" rel="noopener noreferrer">wishlisting Slow Roads on Steam!</a></div></div></div> <div class="splash-body-section svelte-1ub18gl" style="background: var(--sr-primary-50);"><div class="splash-body-wrapper svelte-1ub18gl"><div class="splash-body-header svelte-1ub18gl">Development Roadmap</div> <div class="splash-body-subheader svelte-1ub18gl">Next up in 2.0.1:</div> <div class="splash-body-bullets svelte-1ub18gl"><div class="splash-body-bullet svelte-1ub18gl">Stability upgrades and bug fixes from 2.0.0</div> <div class="splash-body-bullet svelte-1ub18gl">Small environmental detail upgrades</div> <div class="splash-body-bullet svelte-1ub18gl">Small UI/UX upgrades</div></div> <div class="splash-body-subheader svelte-1ub18gl">Near-term goals:</div> <div class="splash-body-bullets svelte-1ub18gl"><div class="splash-body-bullet svelte-1ub18gl">Detailed vehicle interiors, including passenger seats and dashboard displays</div> <div class="splash-body-bullet svelte-1ub18gl">Vehicle physics review, especially for the bike</div> <div class="splash-body-bullet svelte-1ub18gl">Development of a third location</div> <div class="splash-body-bullet svelte-1ub18gl">Rainy weather effects</div> <div class="splash-body-bullet svelte-1ub18gl">Time-of-day rework to allow for daylight cycles and directional lighting</div> <div class="splash-body-bullet svelte-1ub18gl">Continued environmental detail upgrades, such as wildlife, buildings, and improved ground shaders</div> <div class="splash-body-bullet svelte-1ub18gl">Continued performance optimisation</div></div> <div class="splash-body-text svelte-1ub18gl"><a class="splash-body-link svelte-1ub18gl" href="https://discord.gg/TNf9bBrZmR" target="_blank" rel="noopener noreferrer">Join the Discord</a> or <a class="splash-body-link svelte-1ub18gl" href="https://bsky.app/profile/slowroads.io" target="_blank" rel="noopener noreferrer">follow slowroads.io on Bluesky</a> to keep updated and share feedback!</div></div></div> <div class="splash-body-section svelte-1ub18gl" style="background: none;"><div class="splash-body-wrapper svelte-1ub18gl"><div class="splash-body-header svelte-1ub18gl">FAQ</div> <div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">Why do I get such a poor performance?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">How much will the Steam version cost?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">When will the Steam version be released?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">Will the web version still be freely available?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">What's the background on the game's development?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">How and why is the game free, and without ads?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">Why can I drive through trees, or glitch into the sky by going backwards?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">Why are all the cars electric?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">I have a great idea for a feature, how can I tell you?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">Who's the developer?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">Can I contribute to the development of the game?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">Will you make it open-source?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">Which tech/language was used to make Slow Roads?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">How does the environment generation algorithm work?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div><div class="faq-qa svelte-9okg1g"><div class="faq-q svelte-9okg1g">When SR3?<div class="faq-expand svelte-9okg1g"><span style="transform: rotate(45deg);">+</span></div></div> </div></div></div> <div class="splash-body-section svelte-1ub18gl" style="background: var(--sr-primary-50);"><div class="splash-body-wrapper svelte-1ub18gl"><div class="splash-body-header svelte-1ub18gl">Contact</div> <div class="splash-body-text svelte-1ub18gl" style="text-align:center; user-select: default;">Email
+                        <br> <span style="font-size: 1.2rem; font-weight: 400; color: var(--sr-white)">hello@slowroads.io</span> <br> <br>
+                        Discord
+                        <br> <span style="font-size: 1.2rem; font-weight: 400; color: var(--sr-white)"><a class="splash-body-link svelte-1ub18gl" href="https://discord.gg/TNf9bBrZmR" target="_blank" rel="noopener noreferrer">Join the server here</a></span> <br> <br>
+                        Bluesky
+                        <br> <span style="font-size: 1.2rem; font-weight: 400; color: var(--sr-white)"><a class="splash-body-link svelte-1ub18gl" href="https://bsky.app/profile/slowroads.io" target="_blank" rel="noopener noreferrer">Follow slowroads.io here</a></span></div></div></div> <div class="splash-body-section svelte-1ub18gl" style="background: none;"><div class="splash-body-wrapper svelte-1ub18gl"><div class="splash-body-header svelte-1ub18gl">Attributions</div> <div class="splash-body-text svelte-1ub18gl" style="text-align: center">Rendering library - <a class="splash-body-link svelte-1ub18gl" href="https://threejs.org/">three.js</a> <br>
+                        Brand design - <a class="splash-body-link svelte-1ub18gl" href="https://benj-design.com">benj-design.com</a> <br>
+                        Off-world textures - <a class="splash-body-link svelte-1ub18gl" href="https://mars.nasa.gov/mars2020/multimedia/raw-images/">Nasa Perseverance</a> <br>
+                        Brake audio - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/WavJunction.com/sounds/456764/">WavJunction.com on freesound.org</a> <br>
+                        Ambient audio - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/InspectorJ/sounds/401543/">InspectorJ on freesound.org</a> <br>
+                        Tyre audio - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/fractanimal/sounds/614627/">fractanimal on freesound.org</a> <br>
+                        Gravel audio - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/seth-m/sounds/341069/">seth-m on freesound.org</a> <br>
+                        Boost audio - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/YleArkisto/sounds/342892/">YleArkisto on freesound.org</a> <br>
+                        Suspension audio - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/ingudios/sounds/119468/">ingudios on freesound.org</a> <br>
+                        Collision sounds - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/jakobthiesen/sounds/174836/">jakobthiesen on freesound.org</a> <br>
+                        Collision sounds - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/jakobthiesen/sounds/174837/">jakobthiesen on freesound.org</a> <br>
+                        Collision sounds - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/SubwaySandwitch420/sounds/538947/">SubwaySandwitch420 on freesound.org</a> <br>
+                        Barrier scrape sound - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/eyenorth/sounds/464846/">eyenorth on freesound.org</a> <br>
+                        Misc sound effects - <a class="splash-body-link svelte-1ub18gl" href="https://freesound.org/people/HECKFRICKER/sounds/625312/">HECKFRICKER on freesound.org</a> <br></div></div></div> <div class="splash-body-section svelte-1ub18gl" style="background: var(--sr-primary);"><div class="splash-body-wrapper svelte-1ub18gl"><div class="splash-body-header svelte-1ub18gl" style="font-size: 1rem">Thank you for playing</div></div></div></div> <div id="splash-bg-overlay" class="svelte-1ub18gl"></div> <div id="splash-bg" class="svelte-1ub18gl"></div></div></div>  <div id="main" tabindex="-1" autofocus="" class="svelte-157999b"><div id="ui-fixed" class="svelte-157999b">     <div id="ui-settings-bar" class="svelte-1rgrtl6"><a id="ui-settings-steam" target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/3431300/Slow_Roads/" alt="" class="svelte-1rgrtl6">WISHLIST
+        <img id="ui-settings-steam-icon" src="../../slowroads.io/img/icon_steam_white.svg" alt="" class="svelte-1rgrtl6"></a> <div class="audio-control svelte-1hs4ew6"><img class="ui-settings-bar-icon" src="../../slowroads.io/img/ico_volume_on.svg"> </div> <img class="ui-settings-bar-icon svelte-1rgrtl6" src="../../slowroads.io/img/ico_settings.svg"></div> <div class="load-bar svelte-157999b load-bar-init"></div></div> <canvas class="svelte-157999b"></canvas></div> <div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0px; top: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px;"></div></div>
+	
+</body></html>
